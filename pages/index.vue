@@ -43,7 +43,7 @@
         </div>
         <h5>Contact Us</h5>
       </a>
-      <a href="/survey" class="ssection">
+      <a href="/lamoille-survey" class="ssection">
         <div class="iconholder">
           <img src="~assets/images/icons/survey.svg" />
         </div>
