@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <div class="header">
-        <a href="https://tilsonbbc.netlify.app/survey/" class="logo">
+        <a href="https://lamoille-survey.netlify.app/lamoille-survey/" class="logo">
         <img src="~assets/images/LCPC_survey_logo.jpg" width="250" height="59"/>
         </a>
         <div class="header-right">
-          <a class="active" href="https://tilsonbbc.netlify.app/">Home</a>
-          <a href="#contact">Contact</a>
+          <a class="active" href="https://lamoille-survey.netlify.app/lamoille-survey/">Home</a>
+          <a href="https://lamoille-survey.netlify.app/lamoille-survey/">Contact</a>
         </div>
       </div>
     <div class="form-container" id="speedcheckcontainer">
