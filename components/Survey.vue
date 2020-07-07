@@ -20,7 +20,8 @@
             <img src="https://cdn.speedcheck.org/branding/speedcheck-logo-18.png" alt="Speedcheck" />
           </a>
         </div>
-      </div>
+      </div>    
+      <button class="no-internet" @click="initializeForm">I do not have Internet access at my residence</button>
     </div>
     <script src="https://cdn.speedcheck.org/basic/scbjs.min.js" async></script>
     <div id="survey-panel" class="panel panel-white panel-no-border hide">
@@ -64,6 +65,7 @@ export default {
       formInitialized: false
     };
   },
+
   methods: {
     initializeForm: function(speedData) {
       this.formInitialized = true;
@@ -111,6 +113,23 @@ export default {
     color: #2aaee1;
   }
 }
+.no-internet {
+  background: #909090;
+  color: #fff;
+  font-family: verdana;
+  word-spacing: 1;
+  border-radius: 25px;
+  display: block;
+  width: 220px;
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
 .iframecontainer {
   margin: 40px;
   background-color: rgb(26, 26, 26);
