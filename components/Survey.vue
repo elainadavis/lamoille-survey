@@ -30,14 +30,6 @@
 
 <script>
 export default {
-  head: {
-    title: 'Lamoille Internet Survey',
-    meta: [
-      {
-        hid: 'description', name: 'description', content: 'Page description'
-      }
-    ],
-
   mounted: function() {
     let vm = this;
     var open = window.XMLHttpRequest.prototype.open,
@@ -70,9 +62,7 @@ export default {
       results: {},
       formInitialized: false
     };  
-  }
   },
-
   methods: {
     initializeForm: function(speedData) {
       this.formInitialized = true;
