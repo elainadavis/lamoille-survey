@@ -156,7 +156,8 @@ export default {
   .no-internet a {
     float: none;
     display: block;
-    width: 80%
+    width: 80%;
+    height: 80%
   }
 }
 </style>
