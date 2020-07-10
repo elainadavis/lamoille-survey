@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="header">
-        <a href="https://lamoille-survey.netlify.app/lamoille-survey/" class="logo">
+        <a href="https://lamoille.tilsontech.com/" class="logo">
         <img src="~assets/images/LCPC_survey_logo.jpg" width="250" height="59"/>
         </a>
         <div class="header-right">
@@ -30,6 +30,14 @@
 
 <script>
 export default {
+  head: {
+    title: 'Lamoille Internet Survey',
+    meta: [
+      {
+        hid: 'description', name: 'description', content: 'Page description'
+      }
+    ],
+
   mounted: function() {
     let vm = this;
     var open = window.XMLHttpRequest.prototype.open,
@@ -61,7 +69,8 @@ export default {
     return {
       results: {},
       formInitialized: false
-    };
+    };  
+  }
   },
 
   methods: {
@@ -118,7 +127,7 @@ export default {
   word-spacing: 1;
   border-radius: 25px;
   display: block;
-  width: 220px;
+  width: 20%;
   font-size: 12px;
   font-weight: lighter;
   text-transform: uppercase;
