@@ -71,15 +71,15 @@ export default {
         container: "survey123-webform",
         clientId: "Jy4JtM71ralXVggd",
         portalUrl: "https://www.arcgis.com",
-        itemId: "f55e26a4adcd4e27bfa28b3172661451",
+        itemId: "d65556a6d24945dbb3a11999f6ef9ff9",
         hideElements: "navbar",
         onFormLoaded: data => {
           //
           // ANSWER INTERNET SPEED QUESTION WITH CONNECTION SPEED INFO //
           //
           survey123WebForm.setQuestionValue({
-            field_2: speedData.downloadValue,
-            field_3: speedData.uploadValue,
+            download_speed: speedData.downloadValue,
+            upload_speed: speedData.uploadValue,
             latency: speedData.pingValue,
             internet_browser: speedData.browser["browser"],
             operating_sys: speedData.browser["os"],
