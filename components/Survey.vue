@@ -5,8 +5,6 @@
         <img src="~assets/images/LCPC_survey_logo.jpg" width="250" height="59"/>
         </a>
         <div class="header-right">
-          <a class="active" href="https://lamoille-survey.netlify.app/lamoille-survey/">Home</a>
-          <a href="https://lamoille-survey.netlify.app/lamoille-survey/">Contact</a>
         </div>
       </div>
     <div class="form-container" id="speedcheckcontainer">
@@ -151,6 +149,14 @@ export default {
     #sc-footer {
       display: none;
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .no-internet a {
+    float: none;
+    display: block;
+    width: 80%
   }
 }
 </style>
