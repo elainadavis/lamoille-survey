@@ -127,7 +127,7 @@ export default {
   word-spacing: 1;
   border-radius: 25px;
   display: block;
-  width: 20%;
+  width: 300px;
   font-size: 12px;
   font-weight: lighter;
   text-transform: uppercase;
@@ -161,12 +161,9 @@ export default {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .no-internet a {
-    float: none;
-    display: block;
-    width: 80%;
-    height: 80%
+    width: 100px;
   }
 }
 </style>
