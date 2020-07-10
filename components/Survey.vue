@@ -18,7 +18,7 @@
             <img src="https://cdn.speedcheck.org/branding/speedcheck-logo-18.png" alt="Speedcheck" />
           </a>
         </div>
-      </div>    
+      </div>
       <button class="no-internet" @click="initializeForm">I do not have Internet access at my residence</button>
     </div>
     <script src="https://cdn.speedcheck.org/basic/scbjs.min.js" async></script>
@@ -61,7 +61,7 @@ export default {
     return {
       results: {},
       formInitialized: false
-    };  
+    };
   },
   methods: {
     initializeForm: function(speedData) {
@@ -102,7 +102,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   .introtitle {
     max-width: 900px;
     text-align: center;
