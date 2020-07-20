@@ -163,7 +163,8 @@ export default {
         max-width: 50px;
         width: 100%;
         font-size: 12px;
-        border-color: #5B9BD5;
+        border: none;
+        z-index: 99;
         background-color: #5B9BD5;
         padding: 1px;
         border-radius: 4px;
