@@ -25,7 +25,7 @@
     <div id="survey-panel" class="panel panel-white panel-no-border hide">
       <div id="survey123-webform" class="panel panel-no-padding panel-no-border"></div>        
     </div> 
-  <button id="myBtn" style="display: none"><a href="#" style="color: white; text-decoration: none !important"><span>&#8593;</span>   Scroll to Top</a></button>
+  <button id="myBtn" style="visibility: hidden"><a href="#" style="color: white; text-decoration: none !important"><span>&#8593;</span>   Scroll to Top</a></button>
   </div>
 </template>
 
@@ -92,6 +92,7 @@ export default {
       // SHOW SURVEY123 FORM //
       let surveyPanel = document.getElementById("survey-panel");
       surveyPanel.classList.remove("hide");
+      document.getElementById("myBtn").style.visibility="visible";
     }
   }
 };
