@@ -23,8 +23,9 @@
     </div>
     <script src="https://cdn.speedcheck.org/basic/scbjs.min.js" async></script>
     <div id="survey-panel" class="panel panel-white panel-no-border hide">
-      <div id="survey123-webform" class="panel panel-no-padding panel-no-border"></div>
-    </div>
+      <div id="survey123-webform" class="panel panel-no-padding panel-no-border"></div>        
+    </div> 
+  <button id="myBtn" style="display: none"><a href="#" style="color: white; text-decoration: none !important"><span>&#8593;</span>   Scroll to Top</a></button>
   </div>
 </template>
 
@@ -150,6 +151,27 @@ export default {
     }
   }
 }
+
+/*Floating Back-To-Top Button*/
+    #myBtn {
+        position: fixed;
+        bottom: 80px;
+        float: right;
+        right: 15%;
+        left: 85%;
+        max-width: 50px;
+        width: 100%;
+        font-size: 12px;
+        border-color: #5B9BD5;
+        background-color: #5B9BD5;
+        padding: 1px;
+        border-radius: 4px;
+    }
+/*On Hover Color Change*/
+    #myBtn:hover {
+        background-color: gray;
+    }
+ 
 
 @media screen and (max-width: 900px) {
   .no-internet a {
