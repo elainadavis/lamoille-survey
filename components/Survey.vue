@@ -10,18 +10,9 @@
     <div class="form-container" id="speedcheckcontainer">
       <div class="introtitle">
         <h1>Lamoille County Internet Survey</h1>
-        <h3>Please run the speed test below to begin the survey process, we look forward to capturing your feedback in an effort to improve and expand coverage in your area.</h3>
       </div>
-      <div id="sc-container">
-        <div id="sc-branding" class="sc-bb">
-          <a target="_blank" href="https://www.speedcheck.org/">
-            <img src="https://cdn.speedcheck.org/branding/speedcheck-logo-18.png" alt="Speedcheck" />
-          </a>
-        </div>
-      </div>
-      <button class="no-internet" @click="initializeForm">I do not have Internet access at my residence</button>
+      <button class="no-internet" @click="initializeForm">RUN SURVEY</button>
     </div>
-    <script src="https://cdn.speedcheck.org/basic/scbjs.min.js" async></script>
     <div id="survey-panel" class="panel panel-white panel-no-border hide">
       <div id="survey123-webform" class="panel panel-no-padding panel-no-border"></div>        
     </div> 
@@ -105,31 +96,32 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 80px);
+  min-height: calc(75vh - 60px);
   .introtitle {
     max-width: 900px;
     text-align: center;
-    margin: 15px;
+    margin: 15x;
     color: #2aaee1;
   }
 }
 .no-internet {
-  background: #909090;
+  background: #2aaee1;
   color: #fff;
   font-family: verdana;
   word-spacing: 1;
   border-radius: 25px;
   display: block;
   width: 300px;
-  font-size: 12px;
-  font-weight: lighter;
-  text-transform: uppercase;
+  font-size: 16px;
   padding: 10px;
   text-align: center;
   margin: 20px auto;
   cursor: pointer;
 }
-
+.no-internet:hover {
+  background-color: rgb(144, 180, 221);
+  color: #fff;
+}
 .iframecontainer {
   margin: 40px;
   background-color: rgb(26, 26, 26);
