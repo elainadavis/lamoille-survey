@@ -11,6 +11,8 @@
       <div class="introtitle">
         <h1>Lamoille County Internet Survey</h1>
       </div>
+    <br>
+    <br>
       <button class="no-internet" @click="initializeForm">RUN SURVEY</button>
     </div>
     <div id="survey-panel" class="panel panel-white panel-no-border hide">
