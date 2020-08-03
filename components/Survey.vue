@@ -66,20 +66,6 @@ export default {
         portalUrl: "https://www.arcgis.com",
         itemId: "d65556a6d24945dbb3a11999f6ef9ff9",
         hideElements: "navbar",
-        onFormLoaded: data => {
-          //
-          // ANSWER INTERNET SPEED QUESTION WITH CONNECTION SPEED INFO //
-          //
-          survey123WebForm.setQuestionValue({
-            download_speed: speedData.downloadValue,
-            upload_speed: speedData.uploadValue,
-            latency: speedData.pingValue,
-            internet_browser: speedData.browser["browser"],
-            operating_sys: speedData.browser["os"],
-            user_device: speedData.browser["device"],
-            user_isp: speedData.isp["isp"]
-          });
-        },
         onFormSubmitted: function scrollWin() {
           window.scrollTo(0,0);
         },
